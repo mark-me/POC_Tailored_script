@@ -14,9 +14,9 @@ library(visNetwork)
 config <- read_yaml("config.yml")
 ```
 ```{r echo=FALSE}
-df_market <- read_rds("data/market_sample.RDS")
-df_sector <- read_rds("data/sector.RDS")
-graph_company_hierarchies <- read_rds("data/company_graph.rds")
+df_market <- read_rds("/data/market_sample.RDS")
+df_sector <- read_rds("/data/sector.RDS")
+graph_company_hierarchies <- read_rds("/data/company_graph.rds")
 
 df_company <- df_market %>% filter(id_graydon == config$id_company)
 sector_company <- df_company$code_sbi
