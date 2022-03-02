@@ -8,7 +8,7 @@ make_report <- function(id_company){
   
   # Render report
   rmarkdown::render("report.Rmd",
-                    output_file=paste0("report/", id_company, "_report.html"),
+                    output_file=paste0("reports/", id_company, "_report.html"),
                     encoding = "utf-8")
 
   list(msg = paste0("The finished the report for: '", id_company, "'"),
